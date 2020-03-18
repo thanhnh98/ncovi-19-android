@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số liệu NCOVI-19"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"/>
+    <ImageView
+        android:id="@+id/imgReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_update"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"/>
+    <TextView
+        android:id="@+id/tvCases"
+        android:paddingLeft="10dp"
+        android:textColor="#FF9800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhiễm bệnh: 0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/tvTitle"/>
+    <TextView
+        android:id="@+id/tvRecovery"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/tvCases"
+        android:layout_toLeftOf="@id/tvDeaths"
+        android:textAlignment="center"
+        android:text="Hồi phục: 0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvRecovery"
+        android:layout_below="@id/tvTitle"/>
+    <TextView
+        android:id="@+id/tvDeaths"
+        android:textColor="#F44336"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tử vong: 0"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvTitle"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"/>
+</RelativeLayout>
