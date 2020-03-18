@@ -26,6 +26,7 @@ class NcoviReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
 
         var actionCode:String = intent?.extras?.getString("code")?:""
+        Log.e("actionname",actionCode)
         when(actionCode){
             NotificationHelper.ACTION_CLOSE -> close(context)
             NotificationHelper.ACTION_UPDATE -> update(context)

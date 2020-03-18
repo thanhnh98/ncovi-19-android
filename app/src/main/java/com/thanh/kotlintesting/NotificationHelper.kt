@@ -43,7 +43,7 @@ class NotificationHelper(private val context: Context, private val data:NCoviMod
             putExtra("code","update")
         },PendingIntent.FLAG_UPDATE_CURRENT))
 
-        remoteViews.setOnClickPendingIntent(R.id.imgClose,PendingIntent.getBroadcast(context,1001,Intent(Constants.RECEIVER_ACTION_NAME).apply {
+        remoteViews.setOnClickPendingIntent(R.id.imgClose,PendingIntent.getBroadcast(context,1002,Intent(Constants.RECEIVER_ACTION_NAME).apply {
             putExtra("code","close")
         },PendingIntent.FLAG_UPDATE_CURRENT))
 
