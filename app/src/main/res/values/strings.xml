@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NCOVI-19</string>
+
+    <string name="text_death">Số người tử vong: %s</string>
+    <string name="text_recovery">Số người đã hồi phục : %s</string>
+    <string name="text_sick">Số người nhiễm bệnh: %s</string>
+    <string name="text_btn_exit">Thoát</string>
+    <string name="area_vietnam">Việt Nam</string>
+    <string name="area_global">Thế giới</string>
 </resources>

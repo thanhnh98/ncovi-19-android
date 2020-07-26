@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="textColor">#ffffff</color>
+    <color name="colorTextSick">#ffffff</color>
+    <color name="colorTextDeath">#F44336</color>
+    <color name="colorTextRecovery">#4CAF50</color>
+    <color name="colorBtnExit">#FF5722</color>
+    <color name="colorTitle">#9c9c9c</color>
 </resources>

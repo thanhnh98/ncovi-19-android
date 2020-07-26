@@ -7,6 +7,7 @@ import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.annotation.RequiresApi
+import com.thanh.kotlintesting.Constants
 import com.thanh.kotlintesting.NotificationHelper
 import com.thanh.kotlintesting.models.NCoviModel
 import com.thanh.kotlintesting.network.service.NcoviService
@@ -28,10 +29,9 @@ class ForegroundService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Log.e("OK","In Foreground")
-        var case:String=intent?.extras?.get("case").toString()
-        var recovery:String=intent?.extras?.get("recovery").toString()
-        var  deaths:String=intent?.extras?.get("deaths").toString()
+        var case:String=intent?.extras?.get(Constants.BUNDLE_KEY_CASE).toString()
+        var recovery:String=intent?.extras?.get(Constants.BUNDLE_KEY_RECOVERED).toString()
+        var  deaths:String=intent?.extras?.get(Constants.BUNDLE_KEY_DEATH).toString()
         var data=NCoviModel(case,deaths,recovery)
         notificationHelper= NotificationHelper(this,data)
         startForeground(1001,notificationHelper.builder())

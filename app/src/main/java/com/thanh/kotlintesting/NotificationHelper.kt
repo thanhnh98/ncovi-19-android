@@ -61,7 +61,6 @@ class NotificationHelper(private val context: Context, private val data:NCoviMod
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            Log.e("OKK", CHANNEL_ID)
             val name: CharSequence = "NCOVI"
             val description = "NCOVI"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
